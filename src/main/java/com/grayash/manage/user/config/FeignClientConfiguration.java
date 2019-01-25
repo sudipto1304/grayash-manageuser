@@ -7,6 +7,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 
+import com.grayash.exception.decoder.FeignErrorDecoder;
+
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 
@@ -34,5 +36,11 @@ private static final Logger Log = LoggerFactory.getLogger(FeignClientConfigurati
 	        }
 	    };
 	}
+	
+	
+	@Bean
+    public FeignErrorDecoder feignErrorDecoder() {
+        return new FeignErrorDecoder();
+    }
 
 }

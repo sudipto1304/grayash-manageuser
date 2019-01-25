@@ -46,6 +46,7 @@ dependencies {
 	implementation group: 'com.github.gray-ash', name: 'security-filter', version: '1.0.11-SNAPSHOT'
 	implementation group: 'com.github.gray-ash', name: 'audit-activity', version: '1.0.9-SNAPSHOT'
 	implementation group: 'com.github.gray-ash', name: 'common-exception', version: '1.0.2-SNAPSHOT'
+	implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.1.4.RELEASE'
 	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
 }
 

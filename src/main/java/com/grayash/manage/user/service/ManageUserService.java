@@ -19,8 +19,8 @@ public class ManageUserService {
 	private CrudManageUserClient crudClient;
 	
 	 public ManagerUserResponse registerUser(ManageUserRequest request) throws UserPresentException {
-		 
-		 ManagerUserResponse response = crudClient.registerUser(request);
+		 ManagerUserResponse response = null;
+		 System.out.println(crudClient.registerUser(request));
 		 if(Log.isDebugEnabled())
 			 Log.debug("Crud response for registerUser::"+response);
 		 return response;
